@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-box">
+            <div id="timer">00:00:00</div>
+        </div>   
+            <button  onclick="submitQuiz()">Submit</button>
+        
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <h1>MCQ Quiz</h1>
+            <div class="question-nav">
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(1)"center >1</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(2)"center>2</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(3)">3</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(4)">4</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(5)">5</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(6)">6</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(7)">7</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(8)">8</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(9)">9</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(10)">10</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(11)">11</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(12)">12</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(13)">13</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(14)">14</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(15)">15</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(16)">16</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(17)">17</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(18)">18</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(19)">19</a>
+                <a href="javascript:void(0);" class="question-number" onclick="showQuestion(20)">20</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+
+        <div id="quiz">
+            <div class="question" id="q1">
+                <div class="container1">
+                <h2>Question 1: What is the capital of France?</h2></div>
+                <div class="container1"><label><input type="radio" name="q1" value="A"> HIUU</label><br></div>
+               <div class="container1"><label><input type="radio" name="q1" value="B"> FGGBG</label><br></div>
+               <div class="container1"><label><input type="radio" name="q1" value="C">  Berlin</label><br></div>
+            </div>
+            <div class="question" id="q2">
+                <h2>Question 2: What is 2 + 2?</h2>
+                <label><input type="radio" name="q2" value="A"> A. 3</label><br>
+                <label><input type="radio" name="q2" value="B"> B. 4</label><br>
+                <label><input type="radio" name="q2" value="C"> C. 5</label><br>
+                <label><input type="radio" name="q2" value="D"> D. 6</label>
+            </div>
+
+            
+            
+        </div>
+    </div>
+<div class="container2">
+    <div class="navigation-buttons">
+        <button onclick="prevQuestion()">Back</button>
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="confirmAnswer()">Confirm</button>
+        <button onclick="resetQuiz()">Reset</button>
+        
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
